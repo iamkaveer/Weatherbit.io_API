@@ -26,7 +26,7 @@ public class App
     
     public static void callWeatherForecastApi() throws URISyntaxException, IOException {
     	
-    	URIBuilder builder = new URIBuilder("https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=3dd4f3b508144419ac9b25cd2c637ab0&include=minutely");
+    	URIBuilder builder = new URIBuilder("https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=API_KEY&include=minutely");
     	//build object 
     	HttpGet getData = new HttpGet(builder.build());
     	CloseableHttpClient httpClient = HttpClients.createDefault();
